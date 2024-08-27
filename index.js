@@ -5,6 +5,17 @@ function isPalindrome(word) {
 /* 
   Add your pseudocode here
 */
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
+
+// Test cases
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("robot")); // false
+console.log(isPalindrome("hello")); // false
+console.log(isPalindrome("a")); // true
 
 /*
   Add written explanation of your solution here
